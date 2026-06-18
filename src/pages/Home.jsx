@@ -91,16 +91,21 @@ function Home() {
             {/* TRANSACTIONS */}
             <Card className="transaction-card">
               <div className="d-flex justify-content-between align-items-center mb-3">
-                <h5 className="m-0">Recent Transactions</h5>
+                <h5 className="m-0">
+                  Recent Transactions
+                </h5>
 
-                {transactions.length > 5 && (
-                  <span
-                    className="see-all"
-                    onClick={() => setShowAll(!showAll)}
-                    style={{ cursor: "pointer" }}
+                {transactions.length > 4 && (
+                  <button
+                    className="btn btn-link text-decoration-none fw-bold"
+                    onClick={() =>
+                      setShowAll(!showAll)
+                    }
                   >
-                    {showAll ? "Show Less ↑" : "See All →"}
-                  </span>
+                    {showAll
+                      ? "Show Less ↑"
+                      : "See All →"}
+                  </button>
                 )}
               </div>
 
