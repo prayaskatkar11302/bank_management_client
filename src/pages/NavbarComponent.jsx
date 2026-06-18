@@ -93,13 +93,6 @@ function NavbarComponent() {
             cursor: "pointer",
           }}
         >
-          <img
-            src={logo}
-            alt="Bank Logo"
-            width="150"
-            height="90"
-            className="me-2"
-          />
           Banking Application
         </Navbar.Brand>
 
